@@ -1,0 +1,11 @@
+{
+  "drivers": [
+    {
+      "name": "chromedriver",
+      "platform": "windows",
+      "bit": "32",
+      "version": "2.32.0",
+      "url": "https://npm.taobao.org/mirrors/chromedriver/2.32/chromedriver_win32.zip"
+    }
+  ]
+}

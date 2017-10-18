@@ -119,8 +119,9 @@ public class InstallWebDrivers {
     public InstallWebDrivers() {
         installationDirectory = new File(System.getProperty("user.dir") + "/drivers/");
         try {
-            repositoryUrl = new URL(new URL("https://raw.githubusercontent.com") +
-                    "/webdriverextensions/webdriverextensions-maven-plugin-repository/master/repository-3.0.json");
+            repositoryUrl = new URL(getClass().getResource("/drivers_config.json").getPath());
+//            repositoryUrl = new URL(new URL("https://raw.githubusercontent.com") +
+//                    "/webdriverextensions/webdriverextensions-maven-plugin-repository/master/repository-3.0.json");
         } catch (MalformedURLException e) {
             e.printStackTrace();
         }
